@@ -31,11 +31,13 @@ Or simply create a new file and add the following.
 **4. Make changes to set the right apps**
 ```
 cat Caddyfile
-myapp1.localhost
-reverse_proxy http://host.docker.internal:PORT_OF_myapp1
+myapp1.localhost {
+  reverse_proxy http://host.docker.internal:PORT_OF_myapp1
+}
 
-myapp2.localhost
-reverse_proxy http://host.docker.internal:PORT_OF_myapp2
+myapp2.localhost {
+  reverse_proxy http://host.docker.internal:PORT_OF_myapp2
+}
 ```
 
 **5. Start caddy**
