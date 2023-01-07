@@ -1,0 +1,14 @@
+# Use caddy to create a simple reverse proxy
+# Use NAME.localhost so it knows to use a local certificate issuer
+#
+# Example
+# =======
+# docker-compose-service.localhost
+# reverse_proxy http://docker-compose-name:PORT
+#
+# host-run-app.localhost
+# reverse_proxy http://host.docker.internal:PORT
+
+# I have this app in the docker's host at port 5000
+myapp1.localhost
+reverse_proxy http://host.docker.internal:5000
