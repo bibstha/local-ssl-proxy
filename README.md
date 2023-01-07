@@ -1,5 +1,9 @@
 # local-ssl-proxy
-A super simple docker and Caddy config to route local domain names to services running on host or other docker containers
+A super simple docker and Caddy config to route local domain names to services running on host or other docker containers.
+Why?
+
+1. You get to use https for local domains.
+2. Password managers play nicely when domains are separated vs using localhost for everything.
 
 ## Steps
 
